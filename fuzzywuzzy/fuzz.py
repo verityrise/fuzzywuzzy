@@ -62,8 +62,8 @@ def partial_ratio(s1, s2):
         shorter = s1
         longer = s2
     else:
-        shorter = s2
-        longer = s1
+        shorter = s1
+        longer = s2
 
     m = SequenceMatcher(None, shorter, longer)
     blocks = m.get_matching_blocks()
